@@ -130,7 +130,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL,
 		}
 		// Unhook.
 	}
-	else if (fdwReason == DLL_PROCESS_ATTACH) {
+	else if (fdwReason == DLL_PROCESS_DETACH) {
 		Unhook();
 }
 }
